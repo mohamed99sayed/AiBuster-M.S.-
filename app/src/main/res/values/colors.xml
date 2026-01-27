@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- In res/values/colors.xml -->
+
+        <color name="md_theme_light_primary">#0061A4</color>
+        <color name="md_theme_light_onPrimary">#FFFFFF</color>
+        <color name="md_theme_light_primaryContainer">#D1E4FF</color>
+        <color name="md_theme_light_secondary">#535F70</color>
+        <color name="md_theme_light_secondaryContainer">#D7E3F7</color>
+        <color name="md_theme_light_surface">#F8F9FF</color>
+        <color name="md_theme_light_onSurface">#191C20</color>
+        <color name="md_theme_light_onSurfaceVariant">#43474E</color>
+
+        <!-- You can also add your dark theme colors here for organization -->
+        <color name="md_theme_dark_primary">#9DCAFF</color>
+        <color name="md_theme_dark_onPrimary">#003258</color>
+        <color name="md_theme_dark_primaryContainer">#00497D</color>
+        <color name="md_theme_dark_secondary">#BBC7DB</color>
+        <color name="md_theme_dark_secondaryContainer">#3C4858</color>
+        <color name="md_theme_dark_surface">#111418</color>
+        <color name="md_theme_dark_onSurface">#E1E2E8</color>
+        <color name="md_theme_dark_onSurfaceVariant">#C3C7CF</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

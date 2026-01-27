@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".AboutFragment">
+
+    <!-- A Toolbar provides a standard app bar with a back button -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+       android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:navigationIconTint="?attr/colorOnSurface"
+        app:title="About"
+       />
+
+    <!-- A CardView to contain the developer information -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Title inside the card -->
+            <TextView
+                android:id="@+id/dev_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Development Team"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:drawableStartCompat="@drawable/baseline_groups_24"
+                app:drawableTint="?attr/colorPrimary"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                />
+
+            <!-- A divider line -->
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <!-- Your existing TextViews, now styled more consistently -->
+            <TextView
+                android:id="@+id/moustaphan"
+                style="@style/DevInfoText"
+                android:text="Moustapha Hassaan: Lead Dev\nmoustapha584@protonmail.com" />
+            <TextView
+                android:id="@+id/mamdouh"
+                style="@style/DevInfoText"
+                android:text="Mamdouh Atef: Loyal homie\nmamdouhatef222@gmail.com" />
+
+            <TextView
+                android:id="@+id/moustapham"
+                style="@style/DevInfoText"
+                android:text="Moustapha Hossam: Senior Dev\nm.hossam@example.com" />
+
+            <TextView
+                android:id="@+id/nada"
+                style="@style/DevInfoText"
+                android:text="Nada Bakr: Senior Dev\nn.bakr@example.com" />
+
+            <TextView
+                android:id="@+id/mohamed"
+                style="@style/DevInfoText"
+                android:text="Mohamed Wael: Junior Dev\nm.wael@example.com" />
+
+            <TextView
+                android:id="@+id/emad"
+                style="@style/DevInfoText"
+                android:text="Moustapha Emad: An Idiot\nm.emad@example.com"
+                android:layout_marginBottom="0dp"/> <!-- No margin on the last item -->
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

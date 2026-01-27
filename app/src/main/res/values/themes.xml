@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication3" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- All color definitions for the light theme go INSIDE this style block. -->
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_light_secondaryContainer</item>
+
+        <!-- Status bar color for light mode. -->
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- General surface and text colors -->
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+
+        <!-- Failsafe for older library compatibility -->
+
+    </style>
+
+    <!-- This theme inherits from the one above -->
+    <style name="Theme.MyApplication3" parent="Base.Theme.MyApplication3" />
+    <!-- File: res/values/themes.xml -->
+    <style name="DevInfoText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:autoLink">email</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColorLink">?attr/colorPrimary</item>
+    </style>
+
+</resources>
