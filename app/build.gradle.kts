@@ -38,6 +38,9 @@ android {
         mlModelBinding = true
         viewBinding = true
     }
+    aaptOptions {
+        noCompress("tflite")
+    }
 }
 // In your build.gradle.kts (Module :app) file
 
@@ -49,9 +52,9 @@ dependencies {
             because("Ensure all libraries use the same version of Material Components.")
         }
     }
-// PyTorch Mobile Libraries
-    implementation("org.pytorch:pytorch_android_lite:1.13.1")
-    implementation("org.pytorch:pytorch_android_torchvision_lite:1.13.1")
+    implementation("org.tensorflow:tensorflow-lite:2.17.0")
+    implementation("org.tensorflow:tensorflow-lite-support:0.5.0")
+
     implementation("androidx.core:core-ktx:1.17.0")
     implementation("androidx.appcompat:appcompat:1.7.1")
     implementation("com.google.android.material:material:1.13.0") // Your main material dependency
